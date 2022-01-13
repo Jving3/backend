@@ -2,7 +2,7 @@
 import Sequelize from 'sequelize'
 
 
-const sequelize = new Sequelize('bdproyecto', 'root', 'root', {//Modifica los datos para conectarte a la Bd
+const sequelize = new Sequelize('bdproyecto', 'root', 'root', {
     host: 'localhost',
     dialect: 'mysql'
 })
