@@ -2,13 +2,13 @@
 import Sequelize from 'sequelize'
 
 
-const sequelize = new Sequelize('bdproyecto', 'root', 'root', {
+const sequelize = new Sequelize('exactadb', 'root', 'root', {
     host: 'localhost',
     dialect: 'mysql'
 })
 
 const models = {
-    persona: sequelize.import('./persona')
+    produccion: sequelize.import('./produccion')
 }
 
 models.sequelize = sequelize

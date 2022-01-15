@@ -1,22 +1,22 @@
 module.exports = (sequelize, DataTypes) => {
-    const Persona = sequelize.define('Persona', {
+    const Produccion = sequelize.define('produccion', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true, 
             primaryKey: true
         },
-        nombre: {
+        estacion: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        tipo: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        apellido: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        active: {
-            type: DataTypes.BOOLEAN,
+        cantidad: {
+            type: DataTypes.INTEGER,
             allowNull: false
         }
     }, {});
-    return Persona
+    return Produccion
 }
