@@ -5,7 +5,7 @@ const typeDefs = gql`
 type Produccion{
     id: Int!
     estacion: Int!
-    tipo: String!
+    actividad: String!
     cantidad: Int!
 }
 
@@ -16,7 +16,7 @@ type Query{
 
 
 type Mutation{
-    createProduccion(estacion: Int!, tipo: String!, cantidad: Int!): Produccion!
+    createProduccion(estacion: Int!, actividad: String!, cantidad: Int!): Produccion!
 }
 `
 module.exports = typeDefs

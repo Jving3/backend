@@ -11,8 +11,8 @@ const resolvers = {
 
     },
     Mutation: {
-        async createProduccion(root, { estacion, tipo, cantidad }, { models }){
-            return await models.produccion.create( {estacion, tipo, cantidad} )
+        async createProduccion(root, { estacion, actividad, cantidad }, { models }){
+            return await models.produccion.create( {estacion, actividad, cantidad} )
         }
     }
 
